@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .col-2 {
+            background-color: lightgrey;
+            text-align: center;
+            min-height: 100vh;
+            font-family: arial;
+        }
+        
+        .col-2 h2 {
+            padding: 30px 0 50px 0;
+            color: rgb(91, 91, 255);
+            font-weight: 700;
+        }
+        
+        .col-2 h3 {
+            color: black;
+            text-align: left;
+            padding: 20px 0 20px 0;
+        }
+        
+        .col-2 img {
+            padding: 50px 0 90px 0;
+        }
+        
+        .col-10 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: arial;
+        }
+        
+        p {
+            color: black;
+            font-size: 14px;
+            text-align: left;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="vh-100" onload="getCurrentUser()">
+
+    <div class=" vh-100 container-fluid">
+        <div class="row vh-100">
+            <div class="col-2 vh-100">
+
+                <h2 style="text-align:center">User-Profile</h2>
+
+
+                <img src="img/profile.png" alt="You" style="width:100%">
+                <h3 id="name"></h3>
+                <p id="email"></p>
+                <p id="phone"></p>
+                <p id="address"></p>
+            </div>
+            <div class="col-10 vh-100">
+                <div class="postArea">
+                    <input type="text" placeholder="Title Name" id="title">
+                    <input type="text" placeholder="What's in Your Mind" id="titlePost">
+                    <button class="btn" id="postBtn" onclick="postShare()">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</html>
